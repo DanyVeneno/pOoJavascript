@@ -20,6 +20,7 @@ const ryanRay = new Person("Ryan", "Ray");
 // to check that is just syntactic sugar
 typeof Person; // function
 
+// we can store a class in a variable
 let PersonTwo = class {
   constructor(name, surname) {
     this.name = name;

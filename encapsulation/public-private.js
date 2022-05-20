@@ -6,15 +6,30 @@
 // we can use underscore symbol for internal members
 // this is just a convetion, technicaly we can access to properties anyway
 
-function TheatreSeats() {
-  this._seats = [];
+// function TheatreSeats() {
+//   this._seats = [];
+// }
+
+// TheatreSeats.prototype.placePerson = function (person) {
+//   this._seats.push(person);
+// };
+
+// const theatreSeats = new TheatreSeats();
+// theatreSeats.placePerson({ name: "Ryan", surname: "Ray" });
+
+// console.log(theatreSeats);
+
+// using classes
+
+class TheatreSeats {
+  _seats = [];
+
+  placePerson(person) {
+    this._seats.push(person)
+  }
 }
 
-TheatreSeats.prototype.placePerson = function (person) {
-  this._seats.push(person);
-};
-
 const theatreSeats = new TheatreSeats();
-theatreSeats.placePerson({ name: "Ryan", surname: "Ray" });
+theatreSeats.placePerson({name: "Ryan", surname: "Ray"});
 
-theatreSeats;
+console.log(theatreSeats)

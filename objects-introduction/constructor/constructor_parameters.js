@@ -11,6 +11,3 @@ function Person(name, surname) {
 
 const jamesWilson = new Person("James", "Wilson");
 const gregoryHouse = new Person("Gregory", "House");
-
-jamesWilson
-gregoryHouse

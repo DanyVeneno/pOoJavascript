@@ -13,6 +13,8 @@
 //   this.language = ""
 // }
 
+// a simple approach to inherits properties is using prototype
+
 // inherit properties from Person like name an surname
 // Programmer.prototype = new Person()
 
@@ -43,9 +45,14 @@ class Programmer extends Person {
 }
 
 const programmer = new Programmer()
+
+console.log(programmer)
+
 programmer.name = "Ryan"
 programmer.surname = "Ray"
 programmer.language = "Python"
-programmer
+
+console.log(programmer)
+
 
 // https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Inheritance

@@ -1,6 +1,5 @@
-// OBJECTS IN LITERAL NOTATION ARE NOT REUSABLE, WE HAVE TO REPEAT OBJECTS
-
-const johnSmith = {
+// Object Literal are not reusable, so if we need multiple Object we have to write them multiple times
+const john = {
   name: "John",
   surname: "Smith",
   address: {
@@ -13,7 +12,7 @@ const johnSmith = {
   },
 };
 
-const marioRossi = {
+const mario = {
   name: "Mario",
   surname: "Rossi",
   address: {
@@ -26,7 +25,21 @@ const marioRossi = {
   },
 };
 
-// We can create objects with a constructor
+const maria = {
+  name: "maria",
+  surname: "Perez",
+  address: {
+    street: "Av Chapultepec",
+    city: "Mexio",
+    country: "Mexico",
+  },
+  displayFullName: function () {
+    return this.name + " " + this.surname;
+  },
+};
+
+// So instead of write multiple Objects we can use a Object Constructor
+// a constructor basically is a function that returns objects
 function Person() {
   this.name = "";
   this.surname = "";
@@ -37,7 +50,7 @@ function Person() {
   };
 }
 
-// TO CREATE AN OBJECT WITH A CONSTRUCTOR. and we have TO USE new KEYWORD
+// In order to create new objects we have to use the `new` keyword
 let ryanRay = new Person();
 ryanRay.name = "Ryan";
 ryanRay.surname = "Ray";

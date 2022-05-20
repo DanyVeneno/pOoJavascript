@@ -1,4 +1,3 @@
-import './objects-introduction/methods.js'
-// Write your code here
+// import './encapsulation/public-private.js'
 
-console.log("Javascript OOP")
+console.log("Hello World!")

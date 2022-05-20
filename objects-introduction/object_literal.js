@@ -3,26 +3,20 @@ console.log( { } )
 
 // an object is a container of values combined to form a single data structured
 
-// Objects has properties and methods
+// this data belongs to the same user
+const name = 'John'
+const lastname = 'perez'
+const age = 30
 
-// Properties are data
-const person = {
-  name: "John", // property
-  surname: "Carter",
-};
-
-// methods are just properties with function as value
-
-const person2 = {
-  name: "Ryan",
-  lastname: "Ray",
-  sayHello: function () {
-    return "Hello I'am Ryan"
-  }
+// so it's better to use an object to group all data in a same entity
+const user = {
+  name: "John",
+  lastname: 'Carter',
+  age: 30
 }
 
 // an object is a *list* of key value pairs
-const user =  {
+const user2 =  {
   username: "fazt", // key: value
   email: "fazt@gmail.com",
   password: "somepassword",
@@ -30,7 +24,7 @@ const user =  {
   hobbies: ["read", "programming", "run"]
 }
 
-console.log(user)
+console.log(user2)
 
 // and like any list it could be empty
-const emptyObject = {}
+const emptyObject = {} // this is an empty object literal

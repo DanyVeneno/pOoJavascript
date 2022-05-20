@@ -4,6 +4,7 @@ function showFullName() {
 }
 
 const john = {};
+
 john.showFullName = showFullName;
 
 // we can assign a method inside its literal representation
@@ -26,8 +27,47 @@ const ryan = {
 };
 
 // the last method always display the same name, to avoid it, we can use this keyword
-ryan.name = "Braian"
-ryan.showFullName = function () {
-  return this.name + " " + this.surname;
+
+const account = {
+  amount: 100,
+  owner: 'Ryan Ray',
+  deposit() {
+    console.log(this)
+  }
+}
+
+console.log(account)
+console.log(account.deposit())
+
+// we can using this to acess properties
+const account30 = {
+  name: "Jose",
+  lastname: "Perez",
+  ammount: 1000
+}
+account30.printInfo = function () {
+  return this.name + " " + this.lastname + ' has ' + this.ammount + '$'; 
 };
 
+console.log(account30.printInfo())
+
+
+// with classes
+class Rectangle {
+  constructor(heigh, width) {
+    this.heigh = heigh;
+    this.width = width
+  }
+
+  get area() {
+    return this.getArea()
+  }
+
+  getArea() {
+    return this.heigh * this.width;
+  }
+  
+}
+
+const rectangle = new Rectangle(10, 10)
+console.log(rectangle.area)

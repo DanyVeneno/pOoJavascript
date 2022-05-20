@@ -3,12 +3,12 @@
 const company = {
   name: "Fazt Tech",
   employees: [],
-  sortEmployees: function () {},
+  sortEmployees: function () {}, // encapsulates complexity
 };
 
-// when internal behavior depens on publick properties, we frustrate the the effor tho hide internal details
+// when internal behavior depends on publlic properties, we risk to frustrate the effor tho hide internal details
 
-company.employees = "some random string";
+company.employees = "some random string"; // dynamic nature of JS
 
 // company.sortEmployees() // error
 
@@ -29,6 +29,8 @@ function Company() {
 
   this.sortEmployees = function () {};
 }
+
+// using a class
 
 class Company2 {
   constructor(name) {

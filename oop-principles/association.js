@@ -1,7 +1,7 @@
 
-// association is the relationship between two objects
+// association is the relationship between two or more objects
 // each object is independent of each other
-// son an object can exists withouth the other
+// an object can exists without the other
 
 class Person {
   constructor (name, surname) {
@@ -13,4 +13,8 @@ class Person {
 
 const johnSmith = new Person('John', 'Smith') //?
 const fredSmith = new Person('Fred', 'Smith') //?
+
+// both objects are associated but each lives independently
 fredSmith.parent = johnSmith
+
+console.log(fredSmith)

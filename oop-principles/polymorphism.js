@@ -15,6 +15,7 @@ function countItems(x) {
 countItems(3);
 countItems("hello world");
 
+// Overloading with multiple parameters
 function sum(x, y, z) {
   x = x ? x : 0;
   y = y ? y : 0;

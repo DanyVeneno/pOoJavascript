@@ -3,7 +3,7 @@
 
 // the major role determines the ownership of an object in relation to the other
 // the owner object is called aggregate and owned object is called component
-// but each object is independent
+// but each object has an independent life
 
 // this is the owner
 const company = {
@@ -25,4 +25,5 @@ const ryanRay = new Person("Ryan", "Ray");
 company.employees.push(johnSmith);
 company.employees.push(ryanRay);
 
-// aggregation is a mechanism that allows us to create an object consist of several objects
+// aggregation and association seems similar, but even when sintactically are identical. The assigment or attachment of an object to a property, from a conceptual point of view they represent different situations
+// aggregation is a mechanism that allows us to create an object that consist of several objects

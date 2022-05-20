@@ -1,4 +1,11 @@
 // We can extend built-in object functionality using prototypes
+
+String.prototype.concatTest = function () {
+  return this + ' Test';
+}
+
+console.log("Hello World".concatTest())
+
 String.prototype.padLeft = function (width, char = " ") {
   let result = this;
 

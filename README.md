@@ -13,5 +13,8 @@ In order to understand the example you need:
 - objects-introduction
   - literals.js
   - properties.js
+  - methods.js
+  - constructor.js
+  - Ob
 - oop principles
 
